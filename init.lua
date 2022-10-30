@@ -14,4 +14,4 @@ require('opts')
 require('keys')
 
 -- Plugins
--- require('plug')
+require('plug')
