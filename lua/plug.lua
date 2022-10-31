@@ -19,13 +19,13 @@ package_root = util.join_paths(vim.fn.stdpath('data'), 'site', 'pack')
 -- PLUGINS
 --- startup and add configure plugins
 packer.startup(function()
-local use = use
+  local use = use
 
-use { -- nvim-tree
+  use { -- nvim-tree
   'nvim-tree/nvim-tree.lua',
   requires = {
     'nvim-tree/nvim-web-devicons',
   },
-  tag = 'nightly'
-}
+    tag = 'nightly'
+  }
 end)
