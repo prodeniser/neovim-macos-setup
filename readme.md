@@ -26,7 +26,7 @@ Now test it out! Try running Neovim for the first time! Maybe take a look at a c
 
 At this point, if you are coming from vim rather than from a text editor and using vim techniques you could look up a guide for translating your init.vim file into your matching init.lua file. I’ll let you go there and do that, then come back if you want to follow along with the rest! If you’d rather do a fresh install or don’t come from vim prior, then continue to follow along below.
 
-##Setting up your configuration files
+## Setting up your configuration files
 You need to setup the following in order to get started:
 - `mkdir ~/.config/nvim`
 - `touch ~/.config/nvim/init.lua`
