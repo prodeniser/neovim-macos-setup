@@ -1,4 +1,5 @@
 local opt = vim.opt
+local cmd = vim.api.nvim_command
 
 -- [[ Context ]]
 opt.colorcolumn = '80'           -- str:  Show col for max line length
@@ -14,6 +15,7 @@ opt.fileencoding = 'utf8'        -- str:  File encoding to use
 -- [[ Theme ]]
 opt.syntax = "ON"                -- str:  Allow syntax highlighting
 opt.termguicolors = true         -- bool: If term supports ui color then enable
+cmd('colorscheme dracula')       -- cmd: set the colorscheme
 
 -- [[ Search ]]
 opt.ignorecase = false            -- bool: Ignore case in search patterns

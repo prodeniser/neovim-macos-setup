@@ -14,4 +14,10 @@ require('keys') -- Keymaps
 require('plug') -- Plugins
 
 -- Plugin Imports
-require('nvim-tree').setup()
+require('nvim-tree').setup{}
+require('lualine').setup{
+  -- set to use dracula theme like the rest of the editor
+  options = {
+    theme = 'dracula-nvim'
+  }
+}

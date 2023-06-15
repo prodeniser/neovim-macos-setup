@@ -34,3 +34,42 @@ You need to setup the following in order to get started:
 - Setup leader keys
 - Create vars, options, keys, plugins
 
+### Installing Packer - Plugins
+##WARNING: YMMV
+
+When setting up Packer for plug-in management I attempted to follow this tutorial: https://mattermost.com/blog/turning-neovim-into-a-full-fledged-code-editor-with-lua/. I was unable to get things to work the way they did, so I did it the following way and got things to work, finally.
+
+`git clone --depth 1 https://github.com/wbthomason/packer.nvim\ ~/.local/share/nvim/site/pack/packer/start/packer.nvim`
+
+`[[ plug.lua ]]
+
+
+local vim = vim
+
+local execute = vim.api.nvim_command
+local fn = vim.fn
+
+-- ensure that packer is installed
+local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+if fn.empty(fn.glob(install_path)) > 0 then
+  execute('!git clone https://github.com/wbthomason/packer.nvim '..install_path)
+  execute 'packadd packer.nvim'
+end
+vim.cmd('packadd packer.nvim')
+local packer = require'packer'
+local util = require'packer.util'
+packer.init({
+package_root = util.join_paths(vim.fn.stdpath('data'), 'site', 'pack')
+})
+
+--- startup and add configure plugins
+packer.startup(function()
+  local use = use
+
+  -- [[ PLUGINS ]]
+  -- fill in later
+end)`
+
+Once you have this setup, you should be able to add a plugin in the packer.startup function with the syntax of
+
+'use { 'repository_creator/repository' }
