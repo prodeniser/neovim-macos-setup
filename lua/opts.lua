@@ -16,8 +16,9 @@ opt.syntax = "ON"                -- str:  Allow syntax highlighting
 opt.termguicolors = true         -- bool: If term supports ui color then enable
 
 -- [[ Search ]]
-opt.ignorecase = true            -- bool: Ignore case in search patterns
-opt.smartcase = true             -- bool: Override ignorecase if search contains capitals
+opt.ignorecase = false            -- bool: Ignore case in search patterns
+-- Only need this if using true above
+-- opt.smartcase = true             -- bool: Override ignorecase if search contains capitals
 opt.incsearch = true             -- bool: Use incremental search
 opt.hlsearch = false             -- bool: Highlight search matches
 
