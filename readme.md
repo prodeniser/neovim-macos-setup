@@ -41,8 +41,8 @@ When setting up Packer for plug-in management I attempted to follow this tutoria
 
 `git clone --depth 1 https://github.com/wbthomason/packer.nvim\ ~/.local/share/nvim/site/pack/packer/start/packer.nvim`
 
-`[[ plug.lua ]]
-
+```
+[[ plug.lua ]]
 
 local vim = vim
 
@@ -68,7 +68,8 @@ packer.startup(function()
 
   -- [[ PLUGINS ]]
   -- fill in later
-end)`
+end)
+```
 
 Once you have this setup, you should be able to add a plugin in the packer.startup function with the syntax of
 
