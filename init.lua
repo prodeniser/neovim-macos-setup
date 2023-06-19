@@ -21,3 +21,13 @@ require('lualine').setup{
     theme = 'dracula-nvim'
   }
 }
+-- make sure that telescope starts in normal mode
+require('telescope').setup{
+  pickers = {
+    buffers = {
+      initial_mode = 'normal'
+    }
+  }
+}
+
+require('nvim-surround').setup()

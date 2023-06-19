@@ -19,4 +19,7 @@ key_mapper('n', '<leader>n', [[:NvimTreeToggle]], {})
 -- Fuzzy Finding w/ Telescope
 local built_in = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', built_in.find_files, {})
+vim.keymap.set('n', '<leader>fg', built_in.live_grep, {})
+vim.keymap.set('n', '<leader>fb', built_in.buffers, {})
+vim.keymap.set('n', '<leader>fh', built_in.help_tags, {})
 

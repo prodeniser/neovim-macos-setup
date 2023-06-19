@@ -81,4 +81,4 @@ Once you have this setup, you should be able to add a plugin in the packer.start
 - 'DanilaMihailov/beacon.nvim -- highlight cursor on jump
 - 'nvim-lualine/lualine.nvim -- status line theming
 - 'Mofiqul/dracula.nvim' -- colorscheme
-
+- Bonus - Installed sharkdp/fd
