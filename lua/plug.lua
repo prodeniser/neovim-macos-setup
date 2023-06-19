@@ -29,6 +29,13 @@ packer.startup(function()
     },
     tag = 'nightly'
   }
+  use { 
+    'nvim-telescope/telescope.nvim', tag = '0.1.1',
+    requires = { 
+      'nvim-lua/plenary.nvim',
+    }
+    
+  }
 
   -- [[ Theme ]]
   use { 'mhinz/vim-startify' } -- startup menu

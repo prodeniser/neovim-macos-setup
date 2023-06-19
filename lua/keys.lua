@@ -14,4 +14,9 @@ key_mapper('', '<left>', '<nop>')
 key_mapper('', '<right>', '<nop>')
 
 -- Toggle nvim-tree
-key_mapper('n', 'n', [[:NvimTreeToggle]], {})
+key_mapper('n', '<leader>n', [[:NvimTreeToggle]], {})
+
+-- Fuzzy Finding w/ Telescope
+local built_in = require('telescope.builtin')
+vim.keymap.set('n', '<leader>ff', built_in.find_files, {})
+

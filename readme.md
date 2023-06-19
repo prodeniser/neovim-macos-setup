@@ -73,3 +73,12 @@ end)`
 Once you have this setup, you should be able to add a plugin in the packer.startup function with the syntax of
 
 'use { 'repository_creator/repository' }
+
+### Plugins
+- 'telescope-vim' -- has extensibility to improve its fuzzy finding capabilities.
+- 'nvim-tree' -- w/ web icons to help with file tree management
+- 'mhinz/vim-startify' -- startup menu
+- 'DanilaMihailov/beacon.nvim -- highlight cursor on jump
+- 'nvim-lualine/lualine.nvim -- status line theming
+- 'Mofiqul/dracula.nvim' -- colorscheme
+
