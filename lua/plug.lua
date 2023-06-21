@@ -45,5 +45,15 @@ packer.startup(function()
   use { 'DanilaMihailov/beacon.nvim' } -- highlight cursor on jump
   use { 'nvim-lualine/lualine.nvim' } -- status line theming
   use { 'Mofiqul/dracula.nvim' } -- colorscheme
-
+  use { 'lukas-reineke/indent-blankline.nvim' } -- indentation and context highlighting
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+      require('Comment').setup()
+    end
+  }
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
 end)

@@ -23,11 +23,17 @@ require('lualine').setup{
 }
 -- make sure that telescope starts in normal mode
 require('telescope').setup{
-  pickers = {
-    buffers = {
-      initial_mode = 'normal'
-    }
+  defaults = {
+    initial_mode = 'normal'
   }
 }
 
+-- implement surround commands
 require('nvim-surround').setup()
+
+-- indentation highlighting and context
+require("indent_blankline").setup {
+  space_char_blankline = " ",
+  show_current_context = true, -- highlights current conext
+  --show_current_context_start = true, -- underlines context start
+}
