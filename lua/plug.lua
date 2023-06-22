@@ -40,12 +40,8 @@ packer.startup(function()
     tag = "*", -- Use for stability; omit to use `main` branch for the latest features
   }
   -- Toggling commented lines
-  use {
-    'numToStr/Comment.nvim',
-    config = function()
-      require('Comment').setup()
-    end
-  }
+  use { 'numToStr/Comment.nvim'}
+  use { 'windwp/nvim-autopairs'}
 
   -- [[ Theme ]]
   use { 'mhinz/vim-startify' } -- startup menu
@@ -53,6 +49,7 @@ packer.startup(function()
   use { 'nvim-lualine/lualine.nvim' } -- status line theming
   use { 'Mofiqul/dracula.nvim' } -- colorscheme
   use { 'lukas-reineke/indent-blankline.nvim' } -- indentation and context highlighting
+
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
