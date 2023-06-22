@@ -39,9 +39,10 @@ packer.startup(function()
     'kylechui/nvim-surround',
     tag = "*", -- Use for stability; omit to use `main` branch for the latest features
   }
-  -- Toggling commented lines
-  use { 'numToStr/Comment.nvim'}
+  use { 'numToStr/Comment.nvim'} -- Toggling commented lines
   use { 'windwp/nvim-autopairs'}
+  use { 'tpope/vim-fugitive' } -- git plugin
+  use { 'junegunn/gv.vim' } -- git plugin
 
   -- [[ Theme ]]
   use { 'mhinz/vim-startify' } -- startup menu
