@@ -37,3 +37,5 @@ require("indent_blankline").setup {
   show_current_context = true, -- highlights current conext
   --show_current_context_start = true, -- underlines context start
 }
+
+require('Comment').setup()
