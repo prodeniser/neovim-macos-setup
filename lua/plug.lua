@@ -50,6 +50,7 @@ packer.startup(function()
   use { 'nvim-lualine/lualine.nvim' } -- status line theming
   use { 'Mofiqul/dracula.nvim' } -- colorscheme
   use { 'lukas-reineke/indent-blankline.nvim' } -- indentation and context highlighting
+  use { 'sunjon/shade.nvim' } -- dim panel not in focus
 
   use {
     'nvim-treesitter/nvim-treesitter',

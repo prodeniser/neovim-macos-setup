@@ -13,6 +13,8 @@ key_mapper('', '<down>', '<nop>')
 key_mapper('', '<left>', '<nop>')
 key_mapper('', '<right>', '<nop>')
 
+key_mapper('n', '<leader>w', '<C-w>')
+
 -- Toggle nvim-tree
 key_mapper('n', '<leader>n', [[:NvimTreeToggle]], {})
 
@@ -22,4 +24,3 @@ vim.keymap.set('n', '<leader>ff', built_in.find_files, {})
 vim.keymap.set('n', '<leader>fg', built_in.live_grep, {})
 vim.keymap.set('n', '<leader>fb', built_in.buffers, {})
 vim.keymap.set('n', '<leader>fh', built_in.help_tags, {})
-
