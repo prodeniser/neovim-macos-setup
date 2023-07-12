@@ -43,6 +43,7 @@ packer.startup(function()
   use { 'windwp/nvim-autopairs'}
   use { 'tpope/vim-fugitive' } -- git plugin
   use { 'junegunn/gv.vim' } -- git plugin
+  use { 'voldikss/vim-floaterm'} -- floating terminal in nvim
 
   -- [[ Theme ]]
   use { 'mhinz/vim-startify' } -- startup menu

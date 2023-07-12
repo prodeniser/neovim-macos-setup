@@ -12,6 +12,7 @@ require('vars') -- Variables
 require('opts') -- Options
 require('keys') -- Keymaps
 require('plug') -- Plugins
+
 -- Plugin Imports
 require('nvim-tree').setup{}
 require('lualine').setup{
@@ -45,7 +46,7 @@ require('lualine').setup{
   inactive_sections = {
     lualine_a = {},
     lualine_b = {},
-    lualine_c = {'filename'},
+    lualine_c = { {'filename', path =2} },
     lualine_x = {'location'},
     lualine_y = {},
     lualine_z = {}
@@ -76,6 +77,7 @@ require("indent_blankline").setup {
 require('Comment').setup()
 require('nvim-autopairs').setup()
 
+-- dim windows that are not active
 require('shade').setup{
   overlay_opacity = 65,
   -- opacity_step = 1,
