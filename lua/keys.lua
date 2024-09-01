@@ -19,8 +19,8 @@ key_mapper('n', '<leader>w', '<C-w>')
 -- Get escape to put you in normal mode in the terminal
 key_mapper('t', '<Esc>', '<C-\\><C-n>')
 
--- Toggle nvim-tree
-key_mapper('n', '<leader>n', [[:NvimTreeToggle]], {})
+-- nvim-tree
+key_mapper('n', '<leader>n', [[:NvimTreeToggle]], {}) -- toggle
 
 -- Fuzzy Finding w/ Telescope
 local built_in = require('telescope.builtin')
@@ -29,6 +29,7 @@ vim.keymap.set('n', '<leader>fg', built_in.live_grep, {})
 vim.keymap.set('n', '<leader>fb', built_in.buffers, {})
 vim.keymap.set('n', '<leader>fh', built_in.help_tags, {})
 
+-- Floaterm
 key_mapper('n', '<C-n>t', [[:FloatermToggle]])
 key_mapper('n', '<C-n>n', [[:FloatermNew]])
 key_mapper('n', '<C-n>x', [[:FloatermKill]])
